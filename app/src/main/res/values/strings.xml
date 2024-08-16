@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+
+    <string name="name"><u>Unit Converter</u></string>
+
+    <string name="inch"><u>inch</u></string>
+    <string name="cm"><u>cm</u></string>
+    <string name="mm"><u>mm</u></string>
+    <string name="foot"><u>foot</u></string>
+    <string name="yard"><u>yard</u></string>
+    <string name="metres"><u>metre</u></string>
+    <string name="feet"><u>feet</u></string>
+    <string name="mile"><u>mile</u></string>
+    <string name="km"><u>km</u></string>
+
+    <string name="sqinch"><u>sq. inch</u></string>
+    <string name="sqcm"><u>sq. cm</u></string>
+    <string name="sqfoot"><u>sq. foot</u></string>
+    <string name="sqmeter"><u>sq. meter</u></string>
+    <string name="sqyards"><u>sq. yards</u></string>
+    <string name="sqkm"><u>sq. km</u></string>
+    <string name="sqmile"><u>sq. mile</u></string>
+    <string name="hectare"><u>hectare</u></string>
+    <string name="acre"><u>acre</u></string>
+
+    <string name="celcius"><u>celcius</u></string>
+    <string name="fahrenheit"><u>fahrenheit</u></string>
+    <string name="kelvin"><u>kelvin</u></string>
+
+    <string name="ounce"><u>ounce</u></string>
+    <string name="gram"><u>gram</u></string>
+    <string name="pound"><u>pound</u></string>
+    <string name="kilogram"><u>kilogram</u></string>
+    <string name="shortton"><u>short ton</u></string>
+    <string name="metricton"><u>metric ton</u></string>
+
+    <string name="cubicmeter"><u>cubic meter</u></string>
+    <string name="cubicyard"><u>cubic yard</u></string>
+    <string name="litre"><u>litre</u></string>
+    <string name="gallon"><u>gallon</u></string>
+    <string name="fluidounce"><u>fluid ounce</u></string>
+    <string name="millimeter"><u>millimeter</u></string>
+    <string name="pint"><u>pint</u></string>
+
+</resources>

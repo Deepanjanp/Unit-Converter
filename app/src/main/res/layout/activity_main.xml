@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dull_yellow"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="@dimen/_42sdp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:text="LENGTH"
+                android:id="@+id/length"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_22sdp"
+                android:background="@drawable/name_template"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:text="AREA"
+                android:id="@+id/area"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_22sdp"
+                android:background="@drawable/name_template"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:text="VOLUME"
+                android:id="@+id/volume"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_22sdp"
+                android:background="@drawable/name_template"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:text="MASS(weight)"
+                android:id="@+id/mass"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_22sdp"
+                android:background="@drawable/name_template"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:text="TEMPERATURE"
+                android:id="@+id/temp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_22sdp"
+                android:background="@drawable/name_template"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

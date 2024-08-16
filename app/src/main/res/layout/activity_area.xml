@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".length_activity"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:text="AREA"
+                android:background="@drawable/headlines"
+                android:textSize="@dimen/_23sdp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/dark_green"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/centar"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqinch"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:id="@+id/sqinchtosqcm"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqinchbtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqcm"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:id="@+id/sqcmfromsqinch"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centar"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow"
+                    android:layout_toRightOf="@id/centar">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqcm"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:id="@+id/sqcmtosqinch"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqcmbtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqinch"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:id="@+id/sqinchfromsqcm"
+                        android:textColor="@color/red"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/dark_green"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/centar1"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqfoot"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:id="@+id/sqfoottosqm"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqfootbtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqmeter"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:id="@+id/sqmfromsqfoot"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centar1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow"
+                    android:layout_toRightOf="@id/centar1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqmeter"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:id="@+id/sqmtosqfoot"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqmbtn1"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqfoot"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:id="@+id/sqfootfromsqm"
+                        android:textColor="@color/red"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/dark_green"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/centar2"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqmeter"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:id="@+id/sqmtosqyards"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqmbtn2"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqyards"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:id="@+id/sqyardsfromsqm"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centar2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow"
+                    android:layout_toRightOf="@id/centar2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqyards"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:id="@+id/sqyardstosqm"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqyardsbtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqmeter"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:id="@+id/sqmfromsqyards"
+                        android:textColor="@color/red"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/dark_green"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/centar3"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqkm"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:id="@+id/sqkmtosqmile"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqkmbtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqmile"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:id="@+id/sqmilefromsqkm"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centar3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow"
+                    android:layout_toRightOf="@id/centar3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqmile"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:id="@+id/sqmiletosqkm"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/sqmilebtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sqkm"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:id="@+id/sqkmfromsqmile"
+                        android:textColor="@color/red"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/dark_green"
+                android:padding="@dimen/_5sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/centar4"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hectare"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:id="@+id/hectaretoacre"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/hectarebtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/acre"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:id="@+id/acrefromhectare"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centar4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/dull_yellow"
+                    android:layout_toRightOf="@id/centar4">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/acre"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_green"
+                        android:gravity="center"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="enter value"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:id="@+id/acretohectare"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/equals_btn">
+
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@drawable/downward_arrow"
+                            android:id="@+id/acrebtn"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hectare"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="for result"
+                        android:textStyle="bold"
+                        android:id="@+id/hectarefromacre"
+                        android:textColor="@color/red"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
